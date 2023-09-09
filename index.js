@@ -21,6 +21,6 @@ let the_server = the_http.createServer((request, response) => {
     file_serving("files/error.html", 404);
   }
 });
-the_server.listen(the_port, the_host, () => {
+the_server.listen(the_port, () => {
   console.log(`Your Server is Deployed at http://${the_host}:${the_port}`);
 });
